@@ -1,0 +1,15 @@
+{
+  "name": "email-sender",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "start": "node test.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abrar Shariar <shariarabrar@gmail.com> (https://github.com/abrarShariar)",
+  "license": "ISC",
+  "dependencies": {
+    "mandrill-api": "^1.0.45"
+  }
+}
