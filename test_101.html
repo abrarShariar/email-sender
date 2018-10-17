@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>[SUBJECT]</title>
+  <title>COVA Newsletter</title>
   <style type="text/css">
     body {
       padding-top: 0 !important;
@@ -126,12 +127,12 @@
 
     .contentEditable h2.big,
     .contentEditable h1.big {
-      font-size: 26px !important;
+      font-size: 30px !important;
     }
 
     .contentEditable h2.bigger,
     .contentEditable h1.bigger {
-      font-size: 37px !important;
+      font-size: 45px !important;
     }
 
     td,
@@ -183,13 +184,25 @@
 
     h2,
     h1 {
-      line-height: 20px;
+      line-height: 32px;
     }
 
     p {
-      font-size: 14px;
-      line-height: 21px;
+      font-size: 18px;
+      line-height: 28px;
       color: #AAAAAA;
+    }
+
+    ul {
+      font-size: 17px;
+      line-height: 25px;
+      color: #AAAAAA;
+      padding-left: 30px
+    }
+
+    #main_text {
+      font-size: 20px;
+      line-height: 32px;
     }
 
     .contentEditable li {}
@@ -208,11 +221,38 @@
       outline: none;
       text-decoration: none;
       -ms-interpolation-mode: bicubic;
-      width: auto;
-      max-width: 100%;
+      /* width: auto; */
+      /* max-width: 100%; */
       clear: both;
       display: block;
       float: none;
+      height: auto
+    }
+
+    #first_img {
+      margin-top: 1rem
+    }
+
+    #second_section_read_more {
+      display: none
+    }
+
+    #third_section_read_more {
+      display: none
+    }
+
+    .side_image_1 {
+      float: left;
+      padding: 1rem 2rem 1rem 1rem;
+    }
+
+    .side_image_2 {
+      float: right;
+      padding: 1rem 1rem 1rem 1rem;
+    }
+
+    .side_text_1 {
+      padding-top: 2rem;
     }
   </style>
 
@@ -220,8 +260,6 @@
   <script type="colorScheme" class="swatch active">
     { "name":"Default", "bgBody":"ffffff", "link":"27A1E5", "color":"AAAAAA", "bgItem":"ffffff", "title":"444444" }
   </script>
-
-
 </head>
 
 <body paddingwidth="0" paddingheight="0" bgcolor="#d1d3d4" style="padding-top: 0; padding-bottom: 0; padding-top: 0; padding-bottom: 0; background-repeat: repeat; width: 100% !important; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased;"
@@ -230,7 +268,7 @@
     <tbody>
       <tr>
         <td>
-          <table width="600" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#ffffff" style="font-family:helvetica, sans-serif;" class="MainContainer">
+          <table width="700" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#ffffff" style="font-family:helvetica, sans-serif;padding: 10px 10px 10px 10px;" class="MainContainer">
             <!-- =============== START HEADER =============== -->
             <tbody>
               <tr>
@@ -264,7 +302,11 @@
                                                           <td valign="middle" style='vertical-align: middle;'>
                                                             <div class='contentEditableContainer contentTextEditable'>
                                                               <div class='contentEditable' style='text-align: left;font-weight: light; color:#555555;font-size:26;line-height: 39px;font-family: Helvetica Neue;'>
-                                                                <h1 class='big'><a target='_blank' href="https://covalent.ai/" style='color:#444444'>covalent.ai</a></h1>
+                                                                <img style="width:4rem;float:left" src="https://raw.githubusercontent.com/abrarShariar/email-sender/master/cova_logo.jpg"/>
+
+                                                                <h1 class='big' style="padding-top: 2rem;"><a target='_blank' href="https://covalent.ai/" style='color:#444444'>
+                                                                  covalent.ai
+                                                                </a></h1>
                                                               </div>
                                                             </div>
                                                           </td>
@@ -308,7 +350,8 @@
                                         <tr>
                                           <td valign="top" width="580">
                                             <div class='contentEditableContainer contentImageEditable'>
-                                              <div class='contentEditable' style="text-align: center;"><img class="banner" src="https://cdn-images-1.medium.com/max/800/1*s6Li-Kh-Fb3UmELViiXp9Q.jpeg" alt="Logo" title="Logo" width="580" height="221" border="0"></div>
+                                              <div class='contentEditable' style="text-align: center;">
+                                                <img class="banner" src="https://cdn-images-1.medium.com/max/800/1*s6Li-Kh-Fb3UmELViiXp9Q.jpeg" alt="Logo" title="Logo" width="700" height="221" border="0"></div>
                                             </div>
                                           </td>
                                         </tr>
@@ -337,12 +380,12 @@
                                                       <tr>
                                                         <td>
                                                           <div class='contentEditableContainer contentTextEditable'>
-                                                            <div class='contentEditable' style='text-align: center;'>
-                                                              <h2 style="font-size: 20px;">Dear fellow Covans,</h2>
+                                                            <div class='contentEditable'>
+                                                              <h1>Dear fellow Covans,</h1>
                                                               <br>
-                                                              <p>
-                                                                We are happy to announce that we have <a href="https://www.hbs.edu/faculty/Pages/profile.aspx?facId=13407">Professor Elie Ofek</a>
-                                                                 from Harvard Business School, as a new advisor on board with us. Professor Ofek is a renowned economist with expertise in technical product strategies, and has previously worked for IBM Research.                                                              </p>
+                                                              <p id="main_text">
+                                                                We are happy to announce that we have <a href="https://www.hbs.edu/faculty/Pages/profile.aspx?facId=13407">Professor Elie Ofek</a> from Harvard Business School, as a new advisor on board
+                                                                with us. Professor Ofek is a renowned economist with expertise in technical product strategies, and has previously worked for IBM Research. </p>
                                                               <br><br>
                                                               <a target="_blank" href="https://covalent.ai/" class="link2" style="color:#ffffff">Visit website</a>
                                                               <br>
@@ -365,170 +408,101 @@
                                     </table>
                                   </div>
 
+                                  <!-- new first section 1 -->
+
                                   <div class="movableContent" style="border: 0px; padding-top: 0px; position: relative;">
-                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                      <tbody>
-                                        <tr>
-                                          <td height="40"></td>
-                                        </tr>
-                                        <tr>
-                                          <td>
-                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                              <tbody>
-                                                <tr>
-                                                  <td class="specbundle" valign="top" width="142" align="center">
-                                                    <div class='contentEditableContainer contentImageEditable'>
-                                                      <div class='contentEditable'>
-                                                        <img src="https://cdn-images-1.medium.com/max/600/0*QjKb-xm2jKaz1_7p.jpg" alt="side image" width='142' height='142' data-default="placeholder" border="0">
-                                                      </div>
-                                                    </div>
-                                                  </td>
-                                                  <td width="20" valign="top" class="spechide"></td>
-                                                  <td class="specbundle">
-                                                    <table width="100%" cellpadding="0" cellspacing="0" align="center">
-                                                      <tr>
-                                                        <td height='15'></td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td>
-                                                          <div class='contentEditableContainer contentTextEditable'>
-                                                            <div class='contentEditable' style='text-align: left;'>
-                                                              <h2 style='font-size:16px;'>What's next?</h2>
-                                                              <br>
-                                                              <p>
-                                                                The seed round is just one of many important steps to launching the Cova
-                                                                protocol. In the next couple of months, we will finish off a private sale,
-                                                                focus on launching an MVP, and continue to add on partnerships for our
-                                                                protocol.
+                                    <div class='contentEditable'>
+                                      <div class="side_image_1">
+                                        <img id="first_img" src="https://cdn-images-1.medium.com/max/600/0*QjKb-xm2jKaz1_7p.jpg" alt="side image" width='200' height='142' data-default="placeholder" border="0">
+                                      </div>
+                                      <div class="side_text_1">
+                                        <h1>What's next?</h1>
+                                        <br>
+                                        <p>
+                                          The seed round is just one of many important steps to launching the Cova protocol. In the next couple of months, we will finish off a private sale, focus on launching an MVP, and continue to add on partnerships for our protocol. </br></br>
 
-                                                                Please note that we don't have concrete plans for a public sale at the
-                                                                moment.
-                                                                <p>                                                              <br>
-                                                              <!-- <a target='_blank' href="#" class='link4' style='color:#27A1E5;'>read more</a> -->
-                                                            </div>
-                                                          </div>
-                                                        </td>
-                                                      </tr>
-                                                    </table>
-                                                  </td>
-                                                </tr>
-                                              </tbody>
-                                            </table>
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-
-
-
-                                  </div>
-                                  <div class="movableContent" style="border: 0px; padding-top: 0px; position: relative;">
-                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                      <tbody>
-                                        <tr>
-                                          <td height="40"></td>
-                                        </tr>
-                                        <tr>
-                                          <td>
-                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                              <tbody>
-                                                <tr>
-                                                  <td valign="top" class="specbundle">
-                                                    <table width="100%" cellpadding="0" cellspacing="0" align="center">
-                                                      <tr>
-                                                        <td height='15'></td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td>
-                                                          <div class='contentEditableContainer contentTextEditable'>
-                                                            <div class='contentEditable' style='text-align: left;'>
-                                                              <h2 style='font-size:16px;'>Technical developments</h2>
-                                                              <br>
-                                                              <p>
-                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Has been the industry's standard dummy text ever since the 1500s.
-                                                              </p>
-                                                              <br>
-                                                              <!-- <a target='_blank' href="#" class='link4' style='color:#27A1E5;'>read more</a> -->
-                                                            </div>
-                                                          </div>
-                                                        </td>
-                                                      </tr>
-                                                    </table>
-                                                  </td>
-                                                  <td width="20" class="spechide">&nbsp;</td>
-                                                  <td class="specbundle" valign="top" width="142" align="center">
-                                                    <div class='contentEditableContainer contentImageEditable'>
-                                                      <div class='contentEditable'>
-                                                        <img src="https://cdn-images-1.medium.com/max/800/1*14E3aPF5Vyj0-2CxK9iNZg.jpeg" alt="side image" width='142' height='142' data-default="placeholder" border="0">
-                                                      </div>
-                                                    </div>
-                                                  </td>
-                                                </tr>
-                                              </tbody>
-                                            </table>
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-
-
-                                  </div>
-                                  <div class="movableContent" style="border: 0px; padding-top: 0px; position: relative;">
-                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                      <tbody>
-                                        <tr>
-                                          <td height="40"></td>
-                                        </tr>
-                                        <tr>
-                                          <td>
-                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                              <tbody>
-                                                <tr>
-                                                  <td class="specbundle" valign="top" width="142" align="center">
-                                                    <div class='contentEditableContainer contentImageEditable'>
-                                                      <div class='contentEditable'>
-                                                        <img src="https://cdn-images-1.medium.com/max/800/1*0J9BQSLA3ROqegHJK9xeNg.jpeg" alt="side image" width='142' height='142' data-default="placeholder" border="0">
-                                                      </div>
-                                                    </div>
-                                                  </td>
-                                                  <td width="20" valign="top" class="spechide"></td>
-                                                  <td class="specbundle">
-                                                    <table width="100%" cellpadding="0" cellspacing="0" align="center">
-                                                      <tr>
-                                                        <td height='15'></td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td>
-                                                          <div class='contentEditableContainer contentTextEditable'>
-                                                            <div class='contentEditable' style='text-align: left;'>
-                                                              <h2 style='font-size:16px;'>ICYMI</h2>
-                                                              <br>
-                                                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Has been the industry's standard dummy text ever since the 1500s.</p>
-                                                              <br>
-                                                              <!-- <a target='_blank' href="#" class='link4' style='color:#27A1E5;'>read more</a> -->
-                                                            </div>
-                                                          </div>
-                                                        </td>
-                                                      </tr>
-                                                    </table>
-                                                  </td>
-                                                </tr>
-                                              </tbody>
-                                            </table>
-                                          </td>
-                                        </tr>
-                                        <tr>
-                                          <td height='40' colspan="3"></td>
-                                        </tr>
-                                        <tr>
-                                          <td colspan="3">
-                                            <hr style='height:1px;background:#DDDDDD;border:none;'>
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
+                                          Please note that we don't have concrete plans for a public sale at the moment.
+                                        </p>
+                                      </div>
+                                    </div>
                                   </div>
 
+                                  <!-- new first section 2 -->
+                                  <br/>
+                                  <div class="movableContent" style="border: 0px; padding-top: 0px; position: relative;">
+                                    <div class='contentEditable'>
+                                      <div class="side_image_2">
+                                        <img id="first_img" src="https://cdn-images-1.medium.com/max/800/1*14E3aPF5Vyj0-2CxK9iNZg.jpeg" alt="side image" width='400' height='142' data-default="placeholder" border="0">
+                                      </div>
+                                      <div class="side_text_1">
+                                        <h1>Technical developments</h1>
+                                        <br>
+                                        <p>
+                                          <p><strong>TEE</strong></p>
+                                          <ul>
+                                            <li>We have run remote attestation wrapped with SWIG</li>
+                                            <li>Currently focusing on dockerizing the whole TEE environment</li>
+                                            <li>Still working on finishing various form of remote attestation inside<br> graphene library OS.</li>
+                                          </ul>
+                                          <div>
+                                            <br>
+                                            <p><strong>COVA Network</strong></p>
+                                            <ul>
+                                              <li>Finished API interface for data users</li>
+                                              <li>Wrote various tests and dockerizing along with TEE for easy CI/CD</li>
+                                            </ul>
+                                            <br>
+                                            <p><strong>Centrifuge</strong></p>
+                                            <ul>
+                                              <li>Wrote first smart policies on top of the basic CovaVM prototype<br> (Proton)
+                                              </li>
+                                              <li>Made some modification to COVA smart integers</li>
+                                              <li>Currently, we can write the smart policy for CSVs using the same<br> principles of Proton. Implementing and designing various policies for<br> larger datasets.</li>
+                                            </ul>
+                                            <br>
+                                            <p><strong>Blockchain</strong></p>
+                                            <ul>
+                                              <li>Cova blockchain code for the encrypted secret bits is finished</li>
+                                              <li>Primarily focusing on testing and containerizing the whole process</li>
+                                              <li>Designing the deployment mechanisms</li>
+                                            </ul>
+                                          </div>
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+
+
+                                  <!-- new first section 3 -->
+                                  <br/>
+                                  <div class="movableContent" style="border: 0px; padding-top: 0px; position: relative;">
+                                    <div class='contentEditable'>
+                                      <div class="side_image_1">
+                                        <img id="first_img" src="https://cdn-images-1.medium.com/max/800/1*0J9BQSLA3ROqegHJK9xeNg.jpeg" alt="side image" width='400' height='142' data-default="placeholder" border="0">
+                                      </div>
+                                      <div class="side_text_1">
+                                        <h1>ICYMI</h1>
+                                        <br>
+                                        <p>
+                                          <ul>
+                                            <li>Cova’s Tech Lead, Tarik, posted an article named, <a href="https://medium.com/@covatoken/deep-dive-five-whys-for-cova-99c5504645de">“Deep Dive: Five
+                                          Whys for COVA”</a> on our Medium account. He provided in-depth answers to a few questions that we get asked often — questions including, <a href="https://medium.com/@covatoken/deep-dive-five-whys-for-cova-99c5504645de">“Why do you need
+                                          to exist when we have this other company working on TEE?”</a>
+                                              <br>
+                                            </li>
+                                          </ul>
+                                          <br>
+
+                                          <div>
+                                            <ul>
+                                              <li>During San Francisco Blockchain Week, Cova’s co-founder Vincent participated in the panel titled “Developers Tools: No Gold Without the Shovel.” We also set up a booth to answer
+                                                questions from developers.</li>
+                                            </ul>
+                                          </div>
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
                                   <!-- =============== END BODY =============== -->
                                   <!-- =============== START FOOTER =============== -->
 
@@ -590,7 +564,9 @@
                                                         <td width='40'>
                                                           <div class='contentEditableContainer contentFacebookEditable'>
                                                             <div class='contentEditable' style='text-align: center;color:#AAAAAA;'>
+                                                              <a href="https://twitter.com/covatoken" target="_blank">
                                                               <img src="https://raw.githubusercontent.com/abrarShariar/email-sender/master/icons/twitter.png" alt="twitter" width='40' height='40' data-max-width="40" data-customIcon="true" border="0">
+                                                            </a>
                                                             </div>
                                                           </div>
                                                         </td>
@@ -598,7 +574,9 @@
                                                         <td width='40'>
                                                           <div class='contentEditableContainer contentFacebookEditable'>
                                                             <div class='contentEditable' style='text-align: center;color:#AAAAAA;'>
-                                                              <img src="https://raw.githubusercontent.com/abrarShariar/email-sender/master/icons/telegram.png" alt="telegram" width='40' height='40' data-max-width="40" data-customIcon="true" border="0">
+                                                              <a href="https://t.me/covalentofficial" target="_blank">
+                                                                <img src="https://raw.githubusercontent.com/abrarShariar/email-sender/master/icons/telegram.png" alt="telegram" width='40' height='40' data-max-width="40" data-customIcon="true" border="0">
+                                                              </a>
                                                             </div>
                                                           </div>
                                                         </td>
@@ -606,7 +584,9 @@
                                                         <td width='40'>
                                                           <div class='contentEditableContainer contentFacebookEditable'>
                                                             <div class='contentEditable' style='text-align: center;color:#AAAAAA;'>
-                                                              <img src="https://raw.githubusercontent.com/abrarShariar/email-sender/master/icons/github-sign.png" alt="github" width='40' height='40' data-max-width="40" data-customIcon="true" border="0">
+                                                              <a href="https://github.com/covalent-hq/wiki/wiki" target="_blank">
+                                                                <img src="https://raw.githubusercontent.com/abrarShariar/email-sender/master/icons/github-sign.png" alt="github" width='40' height='40' data-max-width="40" data-customIcon="true" border="0">
+                                                              </a>
                                                             </div>
                                                           </div>
                                                         </td>
@@ -614,7 +594,9 @@
                                                         <td width='40'>
                                                           <div class='contentEditableContainer contentFacebookEditable'>
                                                             <div class='contentEditable' style='text-align: center;color:#AAAAAA;'>
+                                                              <a href="https://medium.com/@covatoken" target="_blank">
                                                               <img src="https://raw.githubusercontent.com/abrarShariar/email-sender/master/icons/medium.png" alt="medium" width='40' height='40' data-max-width="40" data-customIcon="true" border="0">
+                                                            </a>
                                                             </div>
                                                           </div>
                                                         </td>
@@ -622,8 +604,11 @@
                                                         <td width='40'>
                                                           <div class='contentEditableContainer contentFacebookEditable'>
                                                             <div class='contentEditable' style='text-align: center;color:#AAAAAA;'>
-                                                              <img src="https://raw.githubusercontent.com/abrarShariar/email-sender/master/icons/reddit.png" alt="facebook" width='40' height='40' data-max-width="40" data-customIcon="true" border="0">
+                                                              <a href="https://www.reddit.com/r/Covalent_Official/" target="_blank">
+                                                                <img src="https://raw.githubusercontent.com/abrarShariar/email-sender/master/icons/reddit.png" alt="facebook" width='40' height='40' data-max-width="40" data-customIcon="true" border="0">
+                                                              </a>
                                                             </div>
+
                                                           </div>
                                                         </td>
                                                         <td width='10'></td>
@@ -661,6 +646,35 @@
       </tr>
     </tbody>
   </table>
+  <script>
+    function secondSectionReadMore() {
+      var second_section_read_more = document.getElementById('second_section_read_more');
+      console.log(second_section_read_more.style);
+      if (!second_section_read_more.style.display) {
+        second_section_read_more.style.display = 'table';
+        document.getElementById('second_section_more').innerHTML = 'less';
+      } else {
+        second_section_read_more.style.display = '';
+        document.getElementById('second_section_more').innerHTML = 'more';
+      }
+    }
+
+    function thirdSectionReadMore() {
+      var third_section_read_more = document.getElementById('third_section_read_more');
+      console.log(third_section_read_more.style);
+      if (!third_section_read_more.style.display) {
+        third_section_read_more.style.display = 'table';
+        document.getElementById('third_section_more').innerHTML = 'less';
+      } else {
+        third_section_read_more.style.display = '';
+        document.getElementById('third_section_more').innerHTML = 'more';
+      }
+    }
+
+    // if(second_section_read_more.style.display){
+    //
+    // }
+  </script>
 </body>
 
 </html>
